@@ -4,4 +4,4 @@ select order_id::bigint,
 	product_id::bigint,
 	quantity::int
 from raw.order_items
-where quantity::int > 0
+where quantity::int > 0;

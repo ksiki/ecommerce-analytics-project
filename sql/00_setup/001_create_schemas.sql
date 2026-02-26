@@ -1,3 +1,3 @@
-create schema raw;
 create schema staging;
+create schema dwh;
 create schema mart;

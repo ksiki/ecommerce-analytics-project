@@ -1,5 +1,5 @@
-drop table if exists staging.users;
-create table staging.users as
+drop table if exists dwh.users;
+create table dwh.users as
 with prep as (
   select
     user_id::bigint,
@@ -8,7 +8,7 @@ with prep as (
     country,
     created_at::timestamp as created_at,
     row_number() over (partition by user_id order by created_at desc nulls last) as rn
-  from raw.users
+  from staging.users
 )
 select
   user_id,

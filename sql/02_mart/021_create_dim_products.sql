@@ -5,4 +5,4 @@ select
   product_name,
   category,
   price
-from staging.products;
+from dwh.products;

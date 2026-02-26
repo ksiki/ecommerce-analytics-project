@@ -5,4 +5,4 @@ select
   acquisition_channel,
   country,
   created_at
-from staging.users;
+from dwh.users;

@@ -1,10 +1,10 @@
-drop table if exists staging.products;
-create table staging.products as
+drop table if exists dwh.products;
+create table dwh.products as
 select
   product_id::bigint,
   product_name,
   category,
   nullif(price, '')::numeric(12,2) as price
-from raw.products
+from staging.products
 where nullif(price, '') is not null
   and nullif(price, '')::numeric(12,2) >= 0;

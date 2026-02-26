@@ -64,12 +64,12 @@ Original unprocessed data:
 - `order_items_raw.csv`
 - `products_raw.csv`
 
-### Staging Layer
+### DWH Layer
 Cleaned and standardized tables:
-- `staging_users`
-- `staging_orders`
-- `staging_order_items`
-- `staging_products`
+- `dwh.users`
+- `dwh.orders`
+- `dwh.order_items`
+- `dwh.products`
 
 ### Mart Layer (Star Schema)
 Optimized analytics model:

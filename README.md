@@ -71,8 +71,7 @@ Cleaned and standardized tables:
 - `dwh.order_items`
 - `dwh.products`
 
-### Mart Layer (Star Schema)
-Optimized analytics model:
+### Mart Layer
 
 **Dimension Tables:**
 - `dim_users`
